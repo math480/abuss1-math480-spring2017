@@ -1,0 +1,223 @@
+%------------------------------------------------------------------------------
+% Beginning of journal.tex
+%------------------------------------------------------------------------------
+%
+% AMS-LaTeX version 2 sample file for journals, based on amsart.cls.
+%
+%        ***     DO NOT USE THIS FILE AS A STARTER.      ***
+%        ***  USE THE JOURNAL-SPECIFIC *.TEMPLATE FILE.  ***
+%
+% Replace amsart by the documentclass for the target journal, e.g., tran-l.
+%
+\documentclass{amsart}
+
+%     If your article includes graphics, uncomment this command.
+\usepackage{graphicx}
+%\graphicspath{ {c:/user/images/} }
+
+\usepackage{url}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{xca}[theorem]{Exercise}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+%    Absolute value notation
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+%    Blank box placeholder for figures (to avoid requiring any
+%    particular graphics capabilities for printing this document).
+\newcommand{\blankbox}[2]{%
+  \parbox{\columnwidth}{\centering
+%    Set fboxsep to 0 so that the actual size of the box will match the
+%    given measurements more closely.
+    \setlength{\fboxsep}{0pt}%
+    \fbox{\raisebox{0pt}[#2]{\hspace{#1}}}%
+  }%
+}
+
+\begin{document}
+
+\title{Discrete Mathematics}
+
+%    Information for first author
+\author{Ashley Buss}
+%    Address of record for the research reported here
+\address{}
+%    Current address
+\curraddr{}
+\email{}
+%    \thanks will become a 1st page footnote.
+\thanks{}
+
+%    Information for second author
+%\author{Author Two}
+%\address{}
+%\email{two@maths.univ.edu.au}
+%\thanks{Support information for the second author.}
+
+%    General info
+%\subjclass[2000]{Primary 54C40, 14E20; Secondary 46E25, 20C20}
+
+%\date{January 1, 2001 and, in revised form, June 22, 2001.}
+
+%\dedicatory{This paper is dedicated to our advisors.}
+
+%\keywords{Differential geometry, algebraic geometry}
+
+%\begin{abstract}
+%This paper is a sample prepared to illustrate the use of the American
+%Mathematical Society's \LaTeX{} document class \texttt{amsart} and
+%publication-specific variants of that class for AMS-\LaTeX{} version 2.
+%\end{abstract}
+
+\maketitle
+
+%\section*{This is an unnumbered first-level section head}
+%This is an example of an unnumbered first-level heading.
+
+%% The correct journal style for \specialsection is all uppercase; a known bug
+%% in amsart.cls prevents this, so input must be uppercase until it is fixed.
+%\specialsection*{This is a Special Section Head}
+\specialsection*{Slide 1: Title Page}
+\specialsection*{Slide 2: Topics To Cover}
+Here are some of the topics I'll be covering today. (Read)
+\specialsection*{Slide 3: What Is Discrete Math?}
+\begin{itemize}
+    \item Discrete math is the branch of mathematics dealing with objects that can assume only distinct, separated values. The term "discrete math" is used in contrast with "continuous mathematics," which is the branch of math dealing with objects that can vary smoothly (which include, for example, calculus). While discrete objects are often characterized by integers, continuous objects require real numbers.%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{http://mathworld.wolfram.com/DiscreteMathematics.html}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \item Discrete math isn't the name of a branch of math, like numbeer theory, algebra, or calculus, but is a description of a set of branches of math that all have a common feature. That is, that they are "discrete," rather than continuous.%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{http://www.cse.buffalo.edu/~rapaport/191/S09/whatisdiscmath.html}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{itemize}
+
+Image for this slide%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{https://ivyleaguecenter.wordpress.com/2015/03/17/why-discrete-math-is-very-important/}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\specialsection*{Slide 4: Topics}
+These are some examples of where discrete math is used. (read them out loud) I'll be covering set theory, combinatorics, and graph theory.
+
+\specialsection*{Slide 5: Set Theory}
+\begin{itemize}
+\item Set theory is the branch of math that deals with the formal properties of sets as units and the expression of other branches of mathematics in terms of sets.%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{https://en.wikipedia.org/wiki/Discrete_mathematics#Set_theory}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item The real beginning of set theory is often seen in Georg Cantor’s publication in 1874, called "On a Property of the Collection of All Real Algebraic Numbers." It was the first paper to provide a lengthy proof that there was more than one kind of infinity. All infinite collections used to be assumed to be equinumerous (which means “of the same size" or having the same number of elements). Cantor proved that the collection of real numbers and the collection of positive integers are not equinumerous. In other words, the real numbers are not countable. Some notable areas of set theory Cantor was involved in include one-to-one correspondence, the absolute infinite well-ordering theorem, and the continuum hypothesis.%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{https://en.wikipedia.org/wiki/Georg_Cantor}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{itemize}
+
+\specialsection*{Slide 6: One-To-One Correspondence}
+\begin{itemize}
+\item One-to-one correspondence means you are able to match one object to another object. In terms of sets, you are able to match every element of a set to an element of another set without running out of elements in such a way that you can’t connect only one element to one other element. Cantor proved a far stronger result than the one-to-one correspondence between the points of the unit square. For any positive integer n, there exists a 1-to-1 correspondence between the points on the unit line segment and all of the points in an n-dimensional space.%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{http://mathworld.wolfram.com/DiscreteMathematics.html}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{itemize}
+Image for this slide%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{https://en.wikipedia.org/wiki/Georg_Cantor#/media/File:Bijection.svg}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\specialsection*{Slide 7: Combinatorics}
+\begin{itemize}
+\item The study of how discrete objects combine with one another and the probabilities of various outcomes is known as combinatorics.%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{http://mathworld.wolfram.com/DiscreteMathematics.html}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item It’s the branch of mathematics studying the enumeration, combination, and permutation of sets of elements and the mathematical relations that characterize their properties. Mathematicians sometimes use the term "combinatorics" to refer to a larger subset of discrete mathematics that includes graph theory. In that case, combinatorics is then referred to as "enumeration."%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{http://mathworld.wolfram.com/Combinatorics.html}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{itemize}
+
+\specialsection*{Slide 8: Combinatorics Use}
+\begin{itemize}
+\item A real world uses for Combinatorics is The Seven Bridges of Konigsberg.
+\item This problem was solved by Leonhard Euler (OILER) in 1736. In this problem, you must cross over every bridge exactly once without reaching an island or the mainland without using a bridge, and without accessing a bridge without crossing to its other end. (Draw image) The number of bridges touching a land mass must be even. In this problem, the number of bridges touching a land mass is odd. The degree of a node (also known as a vertex) is the number of edges touching it. Euler showed that it is necessary for the walk of the tour must be connected and have exactly zero or two nodes of odd degree.%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{https://en.wikipedia.org/wiki/Seven_Bridges_of_K??C??3B6nigsberg}
+\newline
+please replace ?? with the percentage symbol}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{itemize}
+Image used for this slide%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{https://en.wikipedia.org/wiki/Seven_Bridges_of_K??C3??B6nigsberg#/media/File:7_bridges.svg}
+\newline
+please replace ?? with the percentage symbol}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\specialsection*{Slide 9: Graph Theory}
+\begin{itemize}
+\item Graph theory is the mathematical theory of the properties and applications of graphs.%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{https://www.google.com/search?q=what+is+graph+theory&rlz=1C1VSNC_enUS565US566&oq=what+is+graph+theory&aqs=chrome..69i57j0l5.3412j0j7&sourceid=chrome&ie=UTF-8)}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item A graph is a structure amounting to a set of objects in which some pairs of the objects are in some sense "related.” The objects correspond to nodes, and each of the related pairs of nodes is called an edge, which is depicted by a line going from one node to another.%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{https://en.wikipedia.org/wiki/Graph_(discrete_mathematics}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{itemize}
+
+\specialsection*{Slide 10: Trees}
+A tree is a connected graph with no cycles
+\newline
+Image used for this slide%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnote{\url{https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Tree_graph.svg/180px-Tree_graph.svg.png}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{url}
+\bibliographystyle{amsplain}
+\begin{thebibliography}{10}
+%\usepackage{url}
+\bibitem \url{http://mathworld.wolfram.com/DiscreteMathematics.html}
+
+\bibitem \url{http://www.cse.buffalo.edu/~rapaport/191/S09/whatisdiscmath.html}
+
+\bibitem \url{https://ivyleaguecenter.wordpress.com/2015/03/17/why-discrete-math-is-very-important/}
+
+\bibitem \url{https://en.wikipedia.org/wiki/Discrete_mathematics#Set_theory}
+
+\bibitem \url{https://en.wikipedia.org/wiki/Georg_Cantor}
+
+\bibitem \url{https://en.wikipedia.org/wiki/Georg_Cantor#/media/File:Bijection.svg}
+
+\bibitem \url{http://mathworld.wolfram.com/Combinatorics.html}
+
+\bibitem \url{https://en.wikipedia.org/wiki/Seven_Bridges_of_K??C??3B6nigsberg}
+
+\bibitem \url{https://en.wikipedia.org/wiki/Seven_Bridges_of_K??C3??B6nigsberg#/media/File:7_bridges.svg}
+
+\bibitem \url{https://www.google.com/search?q=what+is+graph+theory&rlz=1C1VSNC_enUS565US566&oq=what+is+graph+theory&aqs=chrome..69i57j0l5.3412j0j7&sourceid=chrome&ie=UTF-8)}
+
+\bibitem \url{https://en.wikipedia.org/wiki/Graph_(discrete_mathematics}
+
+\bibitem \url{https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Tree_graph.svg/180px-Tree_graph.svg.png}
+
+\end{thebibliography}
+\newline
+Please replace ?? with the percentage symbol
+
+\end{document}
+
+%------------------------------------------------------------------------------
+% End of journal.tex
+%------------------------------------------------------------------------------
